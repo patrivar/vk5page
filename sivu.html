@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Patric Varis">
+  <meta name="description" content="WKP1">
+  <link href="https://fonts.googleapis.com/css2?family=Epunda+Sans:ital,wght@0,300..900;1,300..900&family=Story+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="asettelu.css" type="text/css">
+  <script src="sivu.js" defer></script>
+  <title>Bonsai</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="img/BondaiLogo.png" alt="logo" width="130" height="130">
+      <p>Bonsai</p>
+    </div>
+
+    <div class="nav-actions">
+      <ul class="nav-list">
+        <li>Menu</li>
+        <li>About us</li>
+        <li>Contact</li>
+      </ul>
+      <button id="logIn1">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="20" height="20" fill="currentColor"><!--!Font Awesome Free v7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+          <path d="M224 160C241.7 160 256 145.7 256 128C256 110.3 241.7 96 224 96L160 96C107 96 64 139 64 192L64 448C64 501 107 544 160 544L224 544C241.7 544 256 529.7 256 512C256 494.3 241.7 480 224 480L160 480C142.3 480 128 465.7 128 448L128 192C128 174.3 142.3 160 160 160L224 160zM566.6 342.6C579.1 330.1 579.1 309.8 566.6 297.3L438.6 169.3C426.1 156.8 405.8 156.8 393.3 169.3C380.8 181.8 380.8 202.1 393.3 214.6L466.7 288L256 288C238.3 288 224 302.3 224 320C224 337.7 238.3 352 256 352L466.7 352L393.3 425.4C380.8 437.9 380.8 458.2 393.3 470.7C405.8 483.2 426.1 483.2 438.6 470.7L566.6 342.7z"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropdown-button">☰ Menu</button>
+      <div class="dropdown-content">
+        <a href="#menu">Menu</a>
+        <a href="#about">About us</a>
+        <a href="#contact">Contact</a>
+        <a href="#login" id="logInDropdown">Log in</a>
+      </div>
+    </div>
+
+    <dialog id="user">
+      <form method="POST">
+        <label>Name:</label>
+        <input class="form" type="text" id="userName" name="userName" minlength="3" placeholder="Name" required title="Syötteen täytyy sisältää vähintään 3 kirjainta">
+        <div class="input-error-space"></div>
+
+        <label>Email:</label>
+        <input class="form" type="email" id="email" name="email" placeholder="Email" required pattern=".+@metropolia.fi" title="Käytä @metropolia.fi">
+        <div class="input-error-space"></div>
+
+        <label>Password:</label>
+        <input class="form" type="password" id="password" name="password" minlength="5" placeholder="Password" required pattern=".*[0-9].*" title="Vähintään 5 merkkiä ja vähintään 1 numero">
+        <div class="input-error-space"></div>
+      </form>
+
+      <div id="formbuttons">
+        <button class="formbut" id="logIn">Log in</button>
+        <button class="formbut" id="cancel">Cancel</button>
+      </div>
+    </dialog>
+  </header>
+
+  <div class="hero">
+    <div id="herotext">
+      <h1>DUMBLINGS</h1>
+      <p>Try our new steamed dumblings!</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1>
+      Welcome to <span id="Name">Bonsai</span>
+      <span class="SmallLogo">
+        <img src="img/BondaiLogo.png" alt="logo" width="50" height="50">
+      </span>
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, 
+      a expedita quam sit officia necessitatibus consequuntur molestiae 
+      recusandae quibusdam dolor qui dicta temporibus iste, rerum amet 
+      est ipsa atque blanditiis. Lorem ipsum dolor sit amet consectetur 
+      adipisicing elit. Quas molestiae magni, quo fugit, sit facilis 
+      natus culpa hic aperiam dignissimos sed? Eius facere ab unde aperiam 
+      odit totam ad quo!
+    </p>
+  </div>
+
+  <footer>
+    <p>© 2025 Patric Varis</p>
+  </footer>
+</body>
+</html>
